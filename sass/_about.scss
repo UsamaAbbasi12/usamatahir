@@ -1,0 +1,53 @@
+.about {
+  min-height: 90vh;
+  padding: 80px;
+
+  //   About image Styling
+  .about-image-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // border: 2px solid red;
+  }
+  .about-content {
+    h2 {
+      font-size: 5rem;
+      text-decoration: underline;
+      text-decoration-color: #5195ee;
+      //   color: #5195ee;
+    }
+    p {
+      padding: 10px;
+      font-size: 2rem;
+      //   color: #766dff;
+    }
+    span {
+      color: #5195ee;
+      font-weight: bolder;
+    }
+    img {
+      box-shadow: rgba(100, 100, 111, 0.4) 0px 7px 29px 0px;
+      border-radius: 10px;
+      padding: 10px;
+    }
+  }
+  //   Media Query for About Section.
+  @media screen and (max-width: 600px) {
+    padding: 0;
+    margin: 10px;
+    .about-image-div {
+      img {
+        width: 300px;
+      }
+    }
+    .about-content {
+      padding: 10px;
+      h2 {
+        font-size: 3rem;
+      }
+      p {
+        font-size: 2rem;
+      }
+    }
+  }
+}

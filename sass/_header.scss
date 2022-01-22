@@ -1,0 +1,138 @@
+.header {
+  width: 100%;
+  min-height: 100vh;
+  background-image: -webkit-linear-gradient(
+    0deg,
+    rgb(118, 109, 255) 0%,
+    #88f3ff 100%
+  );
+  //   Navigation Bar Styling
+  .navbar {
+    //   Brand
+    .navbar-toggler-icon:active {
+      box-shadow: none;
+      outline: none;
+    }
+    .navbar-brand {
+      color: white;
+      font-size: 2.5rem;
+    }
+    .navbar-nav {
+      .nav-link {
+        font-size: 1.6em;
+        margin-left: 30px;
+        color: white;
+        &:hover {
+          color: black;
+        }
+      }
+    }
+    .hire-me {
+      font-size: 1.3rem;
+      color: rgb(255, 255, 255);
+      box-shadow: none;
+      &:hover {
+        background-image: -webkit-linear-gradient(
+          0deg,
+          #766dff 0%,
+          #5195ee 100%
+        );
+        border: 1px solid white;
+      }
+    }
+    // This is media Query for Navbar
+    @media screen and (max-width: 768px) {
+      padding: 5px !important;
+      background-color: rgb(118, 109, 255) !important;
+      .nav-link {
+        margin-left: 0;
+      }
+    }
+  }
+
+  //   About Section Inside Header
+
+  .about {
+    min-height: 90vh;
+    // border: 2px solid red;
+    // Intro Section That introduces My name and Other Things
+    .intro {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      height: 90vh;
+
+      h1 {
+        font-size: 5rem;
+        color: white;
+      }
+      h2 {
+        color: white;
+        font-size: 4rem;
+        .type-animation {
+          color: blue;
+        }
+      }
+      .buttons {
+        .button {
+          font-size: 1.6rem;
+          box-shadow: none;
+        }
+        .button:hover {
+          background-image: -webkit-linear-gradient(
+            0deg,
+            #766dff 0%,
+            #5195ee 100%
+          );
+          border: 1px solid white;
+        }
+        i {
+          text-align: center;
+          display: inline-block;
+          margin-left: 10px;
+          margin-top: 10px;
+          font-size: 18px;
+        }
+      }
+      // This is media Query for Intro Section
+      @media screen and (max-width: 768px) {
+        height: 40vh;
+
+        padding-top: 80px;
+        h1 {
+          font-size: 3rem;
+        }
+        h2 {
+          font-size: 2.3rem;
+        }
+      }
+    }
+  }
+  //   Image Section Styling
+  .profile-image {
+    display: flex;
+    min-height: 90vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    img {
+      margin-left: 120px;
+      box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
+        rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+        rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+    // Media Query For Image in Header Section
+    @media screen and (max-width: 768px) {
+      min-height: 50vh;
+      margin-top: 50px;
+      padding-bottom: 20px;
+      img {
+        margin: auto;
+        border-radius: 10px;
+        height: 450px;
+      }
+    }
+  }
+}
